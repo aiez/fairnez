@@ -1,9 +1,30 @@
 #!/usr/bin/env python3
-"""one-off: raw -> semble-format CSV. usage: python3 convert.py"""
-import csv, os
+"""raw -> semble-format CSV. fetches into a tmp dir, no raw/ in repo.
+usage: python3 convert.py  (or `make recreate`)"""
+import csv, os, tempfile, urllib.request, zipfile
 
 OUT = os.path.dirname(os.path.abspath(__file__))
-RAW = os.path.join(OUT, "raw")
+RAW = tempfile.mkdtemp(prefix="fairnez-")
+
+SOURCES = {
+  "adult.data":      "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data",
+  "german.data":     "https://archive.ics.uci.edu/ml/machine-learning-databases/statlog/german/german.data",
+  "compas.csv":      "https://raw.githubusercontent.com/propublica/compas-analysis/master/compas-scores-two-years.csv",
+  "bank.zip":        "https://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank.zip",
+  "law.csv":         "https://raw.githubusercontent.com/tailequy/fairness_dataset/main/experiments/data/law_school_clean.csv",
+  "communities.data":"https://archive.ics.uci.edu/ml/machine-learning-databases/communities/communities.data",
+  "communities.names":"https://archive.ics.uci.edu/ml/machine-learning-databases/communities/communities.names",
+}
+
+def fetch():
+  for name, url in SOURCES.items():
+    dst = os.path.join(RAW, name)
+    print("fetching %s ..." % name)
+    urllib.request.urlretrieve(url, dst)
+  with zipfile.ZipFile(os.path.join(RAW, "bank.zip")) as z:
+    z.extractall(RAW)
+
+fetch()
 
 def write(path, header, rows):
   with open(os.path.join(OUT, path), "w", newline="") as f:
