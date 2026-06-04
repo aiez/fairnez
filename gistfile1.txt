@@ -1,4 +1,4 @@
-<a href="http://tiny.cc/fairnez"><img align=right src="https://tiny.cc/tiny/qr-image/tiny.cc~optimiz~l~150.png"></a>
+<a href="http://tiny.cc/fairnez"><img align=right src="https://tiny.cc/tiny/qr-image/tiny.cc~fairnez~l~150.png"></a>
 
 ### Fairnez
 Example fariness data files.
