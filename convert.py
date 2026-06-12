@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3 -B
 """raw -> semble-format CSV. fetches into a tmp dir, no raw/ in repo.
+(c) 2026, Tim Menzies <timm@ieee.org>, MIT license
 usage: python3 convert.py  (or `make recreate`)"""
 import csv, os, tempfile, urllib.request, zipfile
 

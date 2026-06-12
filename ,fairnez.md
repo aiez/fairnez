@@ -10,6 +10,10 @@ git clone http://tiny.cc/fairnez && git clone http://tiny.cc/semble
 cd semble && python3 -B semble.py -f ../fairnez/compas.csv --tree
 ```
 
+**Sections:** [NAME](#name) | [SYNOPSIS](#synopsis) | [DATA](#data) | [DATASETS](#datasets) | [NOTES](#notes) | [RECREATE](#recreate) | [REFERENCES](#references) | [SEE ALSO](#see-also) | [LICENSE](#license) | [AUTHOR](#author)
+
+**Files:** [adult.csv](#file-adult-csv) | [bank.csv](#file-bank-csv) | [communities.csv](#file-communities-csv) | [compas.csv](#file-compas-csv) | [german.csv](#file-german-csv) | [law.csv](#file-law-csv) | [convert.py](#file-convert-py) | [protect.py](#file-protect-py) | [labels.py](#file-labels-py)
+
 ## NAME
 
     fairnez - fairness benchmark datasets, semble-CSV format
