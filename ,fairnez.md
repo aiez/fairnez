@@ -2,12 +2,12 @@
 <a href="https://timm.fyi"><img align="right" src="https://img.shields.io/badge/Author-timm-dc143c?logo=readme&logoColor=white" alt="Author"></a><img align="right" src="https://img.shields.io/badge/Language-CSV-000080?logo=files&logoColor=white" alt="Language"><a href="https://choosealicense.com/licenses/mit/"><img align="right" src="https://img.shields.io/badge/License-MIT-32cd32?logo=open-source-initiative&logoColor=white" alt="License"></a><img align="right" src="https://img.shields.io/badge/Purpose-Fairness·Benchmarks-7b68ee?logo=githubcopilot&logoColor=white" alt="Purpose">
 
 ### [http://tiny.cc/fairnez](http://tiny.cc/fairnez)
-Standard fairness-benchmark CSVs in semble column-suffix format. Adult, German, Bank, COMPAS. Each has a sensitive attribute (race / sex / age) and a binary klass. Use with [semble](http://tiny.cc/semble).
+Standard fairness-benchmark CSVs in fft column-suffix format. Adult, German, Bank, COMPAS. Each has a sensitive attribute (race / sex / age) and a binary klass. Use with [fft](http://tiny.cc/fft).
 
 ```bash
 # install and test
-git clone http://tiny.cc/fairnez && git clone http://tiny.cc/semble
-cd semble && python3 -B semble.py -f ../fairnez/compas.csv --tree
+git clone http://tiny.cc/fairnez && git clone http://tiny.cc/fft fft
+cd fft && python3 -B semble.py -f ../fairnez/compas.csv --tree
 ```
 
 **Sections:** [NAME](#name) | [SYNOPSIS](#synopsis) | [DATA](#data) | [DATASETS](#datasets) | [NOTES](#notes) | [RECREATE](#recreate) | [REFERENCES](#references) | [SEE ALSO](#see-also) | [LICENSE](#license) | [AUTHOR](#author)
@@ -92,8 +92,8 @@ cd semble && python3 -B semble.py -f ../fairnez/compas.csv --tree
 
 ## SEE ALSO
 
-    http://tiny.cc/semble   trees + ensembles using these CSVs
-    http://tiny.cc/optimiz  optimization CSVs (auto93, SS-N, ...)
+    http://tiny.cc/fft      trees + ensembles using these CSVs
+    http://tiny.cc/optimiz  optimization CSVs (auto93, config_SS-N, ...)
     http://tiny.cc/konfig   shared Makefile, bashrc, nvim, tmux
 
 ## LICENSE
