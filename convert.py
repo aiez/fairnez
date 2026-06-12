@@ -1,5 +1,5 @@
 #!/usr/bin/env python3 -B
-"""raw -> semble-format CSV. fetches into a tmp dir, no raw/ in repo.
+"""raw -> fft-format CSV. fetches into a tmp dir, no raw/ in repo.
 (c) 2026, Tim Menzies <timm@ieee.org>, MIT license
 usage: python3 convert.py  (or `make recreate`)"""
 import csv, os, tempfile, urllib.request, zipfile
@@ -149,7 +149,7 @@ good_j = [j for j, m in enumerate(miss) if m < 0.5 * len(raw_rows)]
 keep_names = [keep_names[j] for j in good_j]
 raw_rows = [[r[j] for j in good_j] for r in raw_rows]
 tgt_j = keep_names.index("ViolentCrimesPerPop")
-# semble header: capitalize numerics, klass! for target
+# fft header: capitalize numerics, klass! for target
 c_hdr = []
 for j, n in enumerate(keep_names):
   if j == tgt_j:

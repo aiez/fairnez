@@ -4,7 +4,7 @@ fairness convention: 'positive' = the outcome that BENEFITS the individual.
 SPD/ARD/AAOD signed-direction depends on this. Auto-picking minority gets
 it wrong for compas/law/german/communities, so this file is authoritative.
 
-read by semble's --fairness when -P/--pos == 'auto'.
+read by fft's eval.py when -P/--pos == 'auto'.
 """
 POSITIVE = {
   "adult.csv":       ">50K",   # high income; UCI Adult

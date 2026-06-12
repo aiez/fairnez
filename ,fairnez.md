@@ -7,7 +7,7 @@ Standard fairness-benchmark CSVs in fft column-suffix format. Adult, German, Ban
 ```bash
 # install and test
 git clone http://tiny.cc/fairnez && git clone http://tiny.cc/fft fft
-cd fft && python3 -B semble.py -f ../fairnez/compas.csv --tree
+cd fft && python3 -B eval.py -f ../fairnez/compas.csv
 ```
 
 **Sections:** [NAME](#name) | [SYNOPSIS](#synopsis) | [DATA](#data) | [DATASETS](#datasets) | [NOTES](#notes) | [RECREATE](#recreate) | [REFERENCES](#references) | [SEE ALSO](#see-also) | [LICENSE](#license) | [AUTHOR](#author)
@@ -16,11 +16,11 @@ cd fft && python3 -B semble.py -f ../fairnez/compas.csv --tree
 
 ## NAME
 
-    fairnez - fairness benchmark datasets, semble-CSV format
+    fairnez - fairness benchmark datasets, fft-CSV format
 
 ## SYNOPSIS
 
-    python3 -B semble.py -f fairnez/<dataset>.csv --tree
+    python3 -B eval.py -f fairnez/<dataset>.csv
 
 ## DATA
 
