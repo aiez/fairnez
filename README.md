@@ -1,18 +1,18 @@
 <!-- Copyright (c) 2026 Tim Menzies, MIT License https://opensource.org/licenses/MIT -->
 <a href="https://timm.fyi"><img align="right" src="https://img.shields.io/badge/Author-timm-dc143c?logo=readme&logoColor=white" alt="Author"></a><img align="right" src="https://img.shields.io/badge/Language-CSV-000080?logo=files&logoColor=white" alt="Language"><a href="https://choosealicense.com/licenses/mit/"><img align="right" src="https://img.shields.io/badge/License-MIT-32cd32?logo=open-source-initiative&logoColor=white" alt="License"></a><img align="right" src="https://img.shields.io/badge/Purpose-Fairness·Benchmarks-7b68ee?logo=githubcopilot&logoColor=white" alt="Purpose">
 
-### [http://tiny.cc/fairnez](http://tiny.cc/fairnez)
-Standard fairness-benchmark CSVs in fft column-suffix format. Adult, German, Bank, COMPAS. Each has a sensitive attribute (race / sex / age) and a binary klass. Use with [fft](http://tiny.cc/fft).
+### [https://github.com/aiez/fairnez](https://github.com/aiez/fairnez)
+Standard fairness-benchmark CSVs in fft column-suffix format. Adult, German, Bank, COMPAS. Each has a sensitive attribute (race / sex / age) and a binary klass. Use with [fft](https://github.com/aiez/fft).
 
 ```bash
 # install and test
-git clone http://tiny.cc/fairnez && git clone http://tiny.cc/fft fft
+git clone https://github.com/aiez/fairnez && git clone https://github.com/aiez/fft fft
 cd fft && python3 -B eval.py -f ../fairnez/compas.csv
 ```
 
 **Sections:** [NAME](#name) | [SYNOPSIS](#synopsis) | [DATA](#data) | [DATASETS](#datasets) | [NOTES](#notes) | [RECREATE](#recreate) | [REFERENCES](#references) | [SEE ALSO](#see-also) | [LICENSE](#license) | [AUTHOR](#author)
 
-**Files:** [adult.csv](http://tiny.cc/fairnez#file-adult-csv) | [bank.csv](http://tiny.cc/fairnez#file-bank-csv) | [communities.csv](http://tiny.cc/fairnez#file-communities-csv) | [compas.csv](http://tiny.cc/fairnez#file-compas-csv) | [german.csv](http://tiny.cc/fairnez#file-german-csv) | [law.csv](http://tiny.cc/fairnez#file-law-csv) | [convert.py](http://tiny.cc/fairnez#file-convert-py) | [protect.py](http://tiny.cc/fairnez#file-protect-py) | [labels.py](http://tiny.cc/fairnez#file-labels-py)
+**Files:** [adult.csv](https://github.com/aiez/fairnez#file-adult-csv) | [bank.csv](https://github.com/aiez/fairnez#file-bank-csv) | [communities.csv](https://github.com/aiez/fairnez#file-communities-csv) | [compas.csv](https://github.com/aiez/fairnez#file-compas-csv) | [german.csv](https://github.com/aiez/fairnez#file-german-csv) | [law.csv](https://github.com/aiez/fairnez#file-law-csv) | [convert.py](https://github.com/aiez/fairnez#file-convert-py) | [protect.py](https://github.com/aiez/fairnez#file-protect-py) | [labels.py](https://github.com/aiez/fairnez#file-labels-py)
 
 ## NAME
 
@@ -92,9 +92,9 @@ cd fft && python3 -B eval.py -f ../fairnez/compas.csv
 
 ## SEE ALSO
 
-    http://tiny.cc/fft      trees + ensembles using these CSVs
-    http://tiny.cc/optimiz  optimization CSVs (auto93, config_SS-N, ...)
-    http://tiny.cc/konfig   shared Makefile, bashrc, nvim, tmux
+    https://github.com/aiez/fft      trees + ensembles using these CSVs
+    https://github.com/aiez/optimiz  optimization CSVs (auto93, config_SS-N, ...)
+    https://github.com/aiez/konfig   shared Makefile, bashrc, nvim, tmux
 
 ## LICENSE
 
