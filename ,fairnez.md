@@ -12,7 +12,7 @@ cd fft && python3 -B eval.py -f ../fairnez/compas.csv
 
 **Sections:** [NAME](#name) | [SYNOPSIS](#synopsis) | [DATA](#data) | [DATASETS](#datasets) | [NOTES](#notes) | [RECREATE](#recreate) | [REFERENCES](#references) | [SEE ALSO](#see-also) | [LICENSE](#license) | [AUTHOR](#author)
 
-**Files:** [adult.csv](#file-adult-csv) | [bank.csv](#file-bank-csv) | [communities.csv](#file-communities-csv) | [compas.csv](#file-compas-csv) | [german.csv](#file-german-csv) | [law.csv](#file-law-csv) | [convert.py](#file-convert-py) | [protect.py](#file-protect-py) | [labels.py](#file-labels-py)
+**Files:** [adult.csv](http://tiny.cc/fairnez#file-adult-csv) | [bank.csv](http://tiny.cc/fairnez#file-bank-csv) | [communities.csv](http://tiny.cc/fairnez#file-communities-csv) | [compas.csv](http://tiny.cc/fairnez#file-compas-csv) | [german.csv](http://tiny.cc/fairnez#file-german-csv) | [law.csv](http://tiny.cc/fairnez#file-law-csv) | [convert.py](http://tiny.cc/fairnez#file-convert-py) | [protect.py](http://tiny.cc/fairnez#file-protect-py) | [labels.py](http://tiny.cc/fairnez#file-labels-py)
 
 ## NAME
 
